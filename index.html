@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Javascript OOP</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Javascript OOP</h1>
+	<div id="mainForm">
+		<form action="javascript:newPerson()">
+			<p><input type="text" id="namePerson" placeholder="Name" required></p>
+			<p><input type="text" id="lastName" placeholder="Last Name" required></p>
+			<p><input type="number" id="age" placeholder="Age" min="16" required ></p>
+			<p><input type="number" id="idEmployee" placeholder="ID Employee" min="1" required></p>
+			<p><input type="text" id="roleEmployee" placeholder="Role" list="roles" required></p>
+			<div id="radios">
+				<p><label><input type="radio" name="people" value="person" checked="true" onclick="changeVisibility()">  Person</label></p>
+				<p><label><input type="radio" name="people" value="employee" onclick="changeVisibility()">  Employee</label></p>
+			</div>
+			<p><input type="submit" value="Accept"></p>
+			<p><output id="writePerson"></output></p>
+
+			<datalist id="roles">
+				<option value="Operation Manager"></option>
+				<option value="Receptionist"></option>
+				<option value="Quality Control"></option>
+				<option value="Marketing Manager"></option>
+			</datalist>
+		</form>
+	</div>
+	<script src="./classes.js"></script>
+</body>
+</html>
